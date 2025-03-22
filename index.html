@@ -1,0 +1,206 @@
+ <!DOCTYPE html>
+        <html> 
+        <head> 
+        <title>Portfolio</title> 
+        <style>   
+        body
+        {        
+        font-family: Arial, sans-serif;          
+        margin: 0;  
+        padding: 0;    
+        background-color: #e2c2c288;     
+        }      
+        header 
+        {           
+        background-color: #6b073e;    
+        color: #faf4fa;        
+        text-align: center;    
+        padding: 2rem 0;      
+        position: relative; /* Add this */        
+        }  
+        .header-content h1 
+        {            
+        font-size: 2.5rem;    
+        }         
+        /* Add styles for the round profile picture */   
+        .profile-picture {      
+        width: 100px; /* Adjust the size as needed */         
+        height: 100px;       
+        border-radius: 75%; /* Create a circular shape */    
+        object-fit: cover; /* To ensure the image fills the circular area */  
+        position: absolute; /* Add this */    
+        top: 75px; /* Adjust top position as needed */  
+        left: 75px; /* Adjust left position as needed */   
+        }       
+        nav {    
+        background-color: #ec78a8;      
+        color: #0a0808;             
+        text-align: center;      
+        }      
+        nav ul {          
+        list-style-type: none;      
+        padding: 0;        
+        }        
+        nav ul li {   
+        display: inline;         
+        margin: 0 20px;      
+        }     
+        nav ul li a {     
+        text-decoration: none;       
+        color:  #0c0707;   
+        }        
+        .section-content {  
+        background-color: #6b073e; 
+        padding: 2rem;   
+        margin: 1rem;       
+        border-radius: 20px;    
+        box-shadow: 0 0 10px rgba(17, 12, 17, 0.1);     
+        text-align: justify;    
+        }      
+        .download-button {     
+        background-color: #042d3d;  
+        color:  #e6d8d8;         
+        padding: 0.5rem 1rem;  
+        text-decoration: none;      
+        border-radius: 20px;   
+        display: inline-block; 
+        margin-top: 10px;      
+        align-self: center;    
+        }        
+        .download-button:hover {   
+        background-color: #4e0829; 
+        }      
+        footer {
+        text-align: center;   
+        padding: 1rem 0;      
+        background-color: #530a2f;   
+        color:  #ccc8c8;  
+        }        
+        ul {      
+        list-style-type: disc;        
+        padding-left: 20px;       
+        }    
+        </style>
+        </head>
+        <body>   
+        <header>       
+        <div class="header-content">  
+        <!-- Add your profile picture here -->  
+        <img src="thasleem photo.jpg"
+        alt="Your Profile Picture" class="profile-picture"> 
+        <h1>S.THASLEEM FATHIMA</h1>          
+        <p>I am a Student</p>  
+        </div> 
+        </header> 
+        <nav>  
+        <ul> 
+        <li>
+        <a href="#about">
+        About</a>
+        </li>             
+        <li>
+        <a href="#education">
+        Education</a>
+        </li>            
+        <li>
+        <a href="#skills">
+        Skills</a>
+        </li>            
+        <li>
+        <a href="#Internships">
+        Internships</a>
+        </li>             
+        <li>
+        <a href="#resume">Resume</a>
+        </li>                    
+        </ul>     
+        </nav>     
+        <section id="about">        
+        <div class="section-content">        
+        <h2>
+        About Me</h2>      
+        <p>
+        I'm S.Thasleem Fathima  </p>
+        <p> I'm S.Thasleem Fathima ,a second-year 
+                Bachelor of Computer Applications (BCA) student 
+                at Dr. MGR Janaki College of Arts and Science for Women, Chennai.
+                To further enhance my skills, I have earned 
+                certification in web technology. I am dedicated to continuous
+                learning .</p>
+         </div>
+     </section>
+ 
+     <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Bachelor of Computer Applications (BCA)</p>
+                <p> Dr MGR Janaki college of arts and science for women
+                   University of Madras</p>
+            
+            
+        </div>
+    </section>
+ 
+     <section id="skills">
+         <div class="section-content">
+             <h2>Skills</h2>
+             <ul>
+                 <li>html</li>
+                 <li>MS Word</li>
+                 <li>Python</li>
+                 <li>c++</li>
+             </ul>
+         </div>
+     </section>
+ 
+     <section id="Internships">
+         <div class="section-content">
+         <ul>
+            <li>
+                <h2>Internships</h2>
+        </ul>
+            
+             <h1>Thasleem Fathima's Internship Experience</h1>
+  <p>Company Name: 8Queens Software Technology Pvt Ltd</p>
+  <p>Internship Duration: May 01 to May 31</p>
+  <p>Internship in Web Technology </p>
+  <p>Skills Learned: HTML, CSS, JavaScript</p>
+  <p>Certificate: <a href="https://drive.google.com/file/d/1a64UM7UlCFT0nhDNIV01DCwks2u8jUgV/view?usp=drivesdk"
+     target="_blank">View Certificate</a></p>
+         </div>
+     </section>
+ 
+     <section id="resume">
+     
+         <div class="section-content">
+             <center>
+             <h2>Resume</h2>
+             <a href="resume thasleem.pdf" target="_blank" class="download-button">Download CV</a>
+         </center>
+         </div>
+         
+     </section>
+ 
+     <footer>
+         <p>&copy;S.Thasleem Fathima</p>
+     </footer>
+     <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
